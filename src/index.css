@@ -4,12 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-slate-50 text-slate-900 antialiased overflow-x-hidden font-sans;
+    @apply bg-slate-200 text-slate-900 antialiased overflow-x-hidden font-sans;
   }
 
-  /* Fix high contrast readability on white backgrounds */
   h1, h2, h3, h4, h5, h6 {
-    @apply text-slate-900 font-bold tracking-tight;
+    @apply text-slate-900 font-extrabold tracking-tight;
   }
 
   p, span, label, input, button, select, textarea {
@@ -24,27 +23,27 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(241, 245, 249, 0.9);
+  background: rgba(226, 232, 240, 0.9);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.7);
+  background: rgba(100, 116, 139, 0.6);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(100, 116, 139, 0.9);
+  background: rgba(71, 85, 105, 0.9);
 }
 
 .glass-panel {
-  background: #ffffff;
-  border: 1px solid #cbd5e1; /* slate-300 for clear visible outline */
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  background: #f1f5f9; /* Slate 100 gray background */
+  border: 1px solid #cbd5e1; /* slate-300 border */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06);
 }
 
 .glass-panel-glow {
   background: #ffffff;
-  border: 2px solid #3b82f6; /* solid blue border for response card */
-  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.15);
+  border: 2px solid #475569; /* Slate 600 dark gray border */
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
 }
